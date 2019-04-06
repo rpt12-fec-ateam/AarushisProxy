@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link>
+    <title>Daily Harvest-ish</title>
+  </head>
+  <body>
+    <div id="description"></div>
+    <div id="ingredients"></div>
+    <div id="item-photo"></div>
+    <div id="reviews"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="http://localhost:60001/bundle.js"></script>
+    <script src="http://localhost:8080/bundle.js"></script>
+    <script src="http://localhost:3000/bundle.js"></script>
+    <script src="http://localhost:9000/bundle.js"></script>
+    <script>
+    ReactDOM.render(<Description />, document.getElementById('description'));
+    ReactDOM.render(<Ingredients />, document.getElementById('ingredients'));
+    ReactDOM.render(<ItemPhoto />, document.getElementById('item-photo'));
+    ReactDOM.render(<Reviews />, document.getElementById('reviews'));
+    </script>
+  </body>
+</html>
