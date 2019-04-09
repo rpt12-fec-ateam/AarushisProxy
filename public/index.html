@@ -2,17 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link>
+    <link rel="stylesheet" href="mystyle.css">
     <title>Daily Harvest-ish</title>
   </head>
   <body>
+    <div class="topnav">
+      <span>Browse</span>
+      <span>Cookies</span>
+      <span>Who We Are</span>
+      <span>Gift</span>
+      <span id="title">DAILY HARVEST-ish</span>
+      <span>Help</span>
+      <span id="get-started">Get Started</span>
+      <span>Log In</span>
+    </div>
     <div id="description"></div>
     <div id="ingredients"></div>
     <div id="item-photo"></div>
     <div id="reviews"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="http://localhost:60001/bundle.js"></script>
+    <script src="http://localhost:6001/bundle.js"></script>
     <script src="http://localhost:8080/bundle.js"></script>
     <script src="http://localhost:3000/bundle.js"></script>
     <script src="http://localhost:9000/bundle.js"></script>
@@ -20,7 +30,7 @@
     ReactDOM.render(<Description />, document.getElementById('description'));
     ReactDOM.render(<Ingredients />, document.getElementById('ingredients'));
     ReactDOM.render(<ItemPhoto />, document.getElementById('item-photo'));
-    ReactDOM.render(<Reviews />, document.getElementById('reviews'));
+    ReactDOM.render(<App />, document.getElementById('reviews'));
     </script>
   </body>
 </html>

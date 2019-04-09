@@ -9,6 +9,8 @@ const app = express();
 
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
+app.use('/', express.static(__dirname + '/public'));
+app.use('/item/:id', express.static(__dirname + '/public'));
 
 app.listen(port, () => {
   console.log('server running at: ', port);
