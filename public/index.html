@@ -6,7 +6,8 @@
   </head>
   <body>
     <div class="topnav">
-      <span>Browse</span>
+      <span id="browse">Browse</span>
+      <img id="arrow" src="arrow.png">
       <span>Cookies</span>
       <span>Who We Are</span>
       <span>Gift</span>
@@ -19,7 +20,6 @@
     <div id="ingredients"></div>
     <div id="item-photo"></div>
     <div id="reviews"></div>
-
     <!-- <script src="http://localhost:6001/bundle.js"></script>
     <script src="http://localhost:8080/bundle.js"></script>
     <script src="http://localhost:3000/bundle.js"></script> -->
@@ -31,7 +31,6 @@
     // ReactDOM.render(<Ingredients />, document.getElementById('ingredients'));
     // ReactDOM.render(<ItemPhoto />, document.getElementById('item-photo'));
     ReactDOM.render(React.createElement(ComponentReviews), document.getElementById('reviews'));
-    </script>
-   
+    </script> 
   </body>
 </html>
