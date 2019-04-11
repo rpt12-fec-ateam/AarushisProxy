@@ -24,7 +24,27 @@ app.get('/allItems/item/:id', function(req, res) {
   proxy.web(req, res, { target: 'http://localhost:9000' });
 });
 
+app.get('/items', (req, res) => {
+  proxy.web(req, res, { target: 'http://localhost:3000' });
+})
+
+app.get('/images', (req, res) => {
+  proxy.web(req, res, { target: 'http://localhost:3000' });
+})
+
+app.get('/benefits', (req, res) => {
+  proxy.web(req, res, { target: 'http://localhost:3000' });
+})
+
+app.get('/item-benefits', (req, res) => {
+  proxy.web(req, res, { target: 'http://localhost:3000' });
+})
+
+app.get('/test', function (req, res) {
+  proxy.web(req, res, { target: 'http://localhost:6001' });
+});
+
 app.listen(port, () => {
-  console.log('server running at: ', port);
+  console.log('proxy server running at: ', port);
 })
 

@@ -16,21 +16,22 @@
       <span id="get-started">Get Started</span>
       <span>Log In</span>
     </div>
+    <div id="root"></div>
+    <div id="app"></div>
     <div id="description"></div>
-    <div id="ingredients"></div>
-    <div id="item-photo"></div>
     <img id="border" src="please-work.png">
+    <br></br>
     <div id="reviews"></div>
-    <!-- <script src="http://localhost:6001/bundle.js"></script>
-    <script src="http://localhost:8080/bundle.js"></script>
-    <script src="http://localhost:3000/bundle.js"></script> -->
+    <script src="http://localhost:6001/bundle.js"></script>
+    <!-- <script src="http://localhost:8080/bundle.js"></script> -->
+    <script src="http://localhost:3000/bundle.js"></script>
     <script src="http://localhost:9000/bundle.js"></script>
      <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script>
-    // ReactDOM.render(<Description />, document.getElementById('description'));
-    // ReactDOM.render(<Ingredients />, document.getElementById('ingredients'));
-    // ReactDOM.render(<ItemPhoto />, document.getElementById('item-photo'));
+    ReactDOM.render(React.createElement(App), document.getElementById('root'));
+    ReactDOM.render(React.createElement(Ingredients), document.getElementById('app'));
+    // ReactDOM.render(React.createElement(Photo), document.getElementById('description'));
     ReactDOM.render(React.createElement(ComponentReviews), document.getElementById('reviews'));
     </script> 
     <a id="ref" href="https://www.freepik.com/free-photos-vectors/music">Music vector created by freepik - www.freepik.com</a>
