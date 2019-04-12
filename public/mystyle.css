@@ -1,0 +1,48 @@
+#title {
+  padding-right: 20.5%;
+  padding-left: 20.5%;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#get-started {
+  background-color: black;
+  color: white;
+}
+
+.topnav span {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.topnav {
+    font-family: Sailec, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid gray
+}
+
+#ref {
+  font-family: Sailec, sans-serif;
+  font-size: 8px;
+  color: lightslategrey;
+}
+
+#border {
+  width: 100%;
+}
+
+#arrow {
+  width: .7%;
+  height: .7%;
+}
+
+#browse {
+  padding-right: 0px;
+}
+
+#root {
+  align-content: center;
+}
