@@ -19,19 +19,25 @@
     <div id="root"></div>
     <div id="item"></div>
     <img id="border" src="please-work.png">
-    <div id="app"></div>
+    <div id="heather"></div>
     <img id="border" src="please-work.png">
     <br></br>
     <div id="reviews"></div>
-    <script src="http://localhost:6001/bundle.js"></script>
+    <!-- <script src="http://localhost:6001/bundle.js"></script>
     <script src="http://localhost:8080/bundle.js"></script>
     <script src="http://localhost:3000/bundle.js"></script>
-    <script src="http://localhost:9000/bundle.js"></script>
-     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="http://localhost:9000/bundle.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
+    <script src='./vendor.js'></script>
+    <script src='./heather.js'></script>
+    <script src='./item.js'></script>
+    <script src='./reviews.js'></script>
+    <script src='./root.js'></script>
     <script>
     ReactDOM.render(React.createElement(App), document.getElementById('root'));
-    ReactDOM.render(React.createElement(Ingredients), document.getElementById('app'));
+    ReactDOM.render(React.createElement(Heather), document.getElementById('heather'));
     ReactDOM.render(React.createElement(Item), document.getElementById('item'));
     ReactDOM.render(React.createElement(ComponentReviews), document.getElementById('reviews'));
     </script> 
