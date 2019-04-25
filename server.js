@@ -40,11 +40,11 @@ app.get('/item-benefits', (req, res) => {
   proxy.web(req, res, { target: 'http://localhost:3000' });
 })
 
-app.get('/test', function (req, res) {
+app.get('/ingredients', function (req, res) {
   proxy.web(req, res, { target: 'http://localhost:6001' });
 });
 
-app.get('/test1', (req, res) => {
+app.get('/test', (req, res) => {
   proxy.web(req, res, { target: 'http://localhost:8080' });
 });
 
